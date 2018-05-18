@@ -1,92 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <title>Climate Analysis</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous">
-        </script>
-</head>
-<body><nav class="navbar navbar-default">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                    aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="Landing.html">Weather Analysis</a>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Landing</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"crossorigin="anonymous"> </script>
+    </head>
+    <body id="body">
+    <nav class = "navbar navbar-default">
+         <div class = "navbar-header">
+               <div class="col-md-6">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Landing.html">Weather Analysis</a>
+                    <div class="container">
+                        <div class="col-md-2">
+                            <div class="sigline">
+                                 <p>Zach King | Data Analytics</p>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphs
-                            <span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a href="Latvstemp.html">Temperature</a>
-                            </li>
-                            <li>
-                                <a href="Latvshumidity.html">Humidity</a>
-                            </li>
-                            <li>
-                                <a href="Latvsclouds.html">Cloudiness</a>
-                            </li>
-                            <li>
-                                <a href="Latvswind.html">Wind Speed</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="comparison.html">Comparison</a>
-                    </li>
-                    <li>
-                        <a href="data.html">Data</a>
-                    </li>
-                </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphs<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Latvstemp.html">Temperature</a></li>
+                                <li><a href="Latvshumidity.html">Humidity</a></li>
+                                <li><a href="Latvsclouds.html">Cloudiness</a></li>
+                                <li><a href="Latvswind.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="comparison.html">Comparison</a></li>
+                        <li> <a href="data.html">Data</a></li>
+                    </ul>
             </div>
-        </div>
-        <div class="container">
-            <div class="col-md-12">
-                <div class="sigline">
-                    <p>
-                        Zach King | Data Analytics
-                    </p>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-1"></div>
+               <div class="col-md-7">
+                    <div class="box box-left">
+                        <div class="panel-default">
+                            <div class="panel-body">
+                                <h2>Latitude vs Cloudiness</h2>
+                                <hr>
+                                <img src="Latitude vs Cloudiness.png" alt="Latvsclouds" style="width:550px; height:400px; float: left; margin:5%">
+                                <p class="text1">
+                                       Most of the clouds concentrate towards higher latitudes thinning towards the equator and lower latitudes.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box">
+                        <div class="panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <h3 class="col-md-12">Visualizations</h3>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <a href="Latvstemp.html">
+                                          <img src="Latitude vs Temperature.png" style="width: 100%; margin: 5%; ">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <a href="Latvshumidity.html">
+                                              <img src="Latitude vs Humidity.png" style="width: 100%; margin:5%;">
+                                            </a>
+                                     </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <a href="Latvsclouds.html">
+                                                  <img src="Latitude vs Cloudiness.png" style="width: 100%; margin:5%;">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                    <a href="Latvswind.html">
+                                                      <img src="Latitude vs Wind Speed (MPH).png" style="width: 100%; margin:5%;">
+                                                    </a>
+                                             </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </nav>
-    <div class="container">
-            <div class="row row-grid">
-                <div class="col-md-8">
-                    <div class="box box-left">
-                        <section id="Latvsclouds">
-                            <h1>Equatorial Latitude vs Cloudiness</h1>
-                            <hr>
-                            <figure>
-                                <a target="_blank" href=# >
-                                    <img id="viz-main" src="Latitude vs Cloudiness.png" alt="Latitude vs temperature">
-                                </a>
-                            </figure>
-                            <section id="summary">
-                                <p>
-                                </p>
-                               
-                            </section>
-                        </section>
-                    </div>
-                </div> 
-            </div>
-        
-</body>
+
+
+
+
+    </body>
 </html>
-        

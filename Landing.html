@@ -1,112 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
-    <title>Climate Analysis</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-        crossorigin="anonymous">
-        </script>
-</head>
-<body>
-        <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
-                            aria-expanded="false">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="Landing.html">Weather Analysis</a>
-                    </div>
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphs
-                                    <span class="caret"></span>
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a href="Latvstemp.html">Temperature</a>
-                                    </li>
-                                    <li>
-                                        <a href="Latvshumidity.html">Humidity</a>
-                                    </li>
-                                    <li>
-                                        <a href="Latvsclouds.html">Cloudiness</a>
-                                    </li>
-                                    <li>
-                                        <a href="Latvswind.html">Wind Speed</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="comparison.html">Comparison</a>
-                            </li>
-                            <li>
-                                <a href="data.html">Data</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="col-md-12">
-                        <div class="sigline">
-                            <p>
-                                Zach King | Data Analytics
-                            </p>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Landing</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"crossorigin="anonymous"> </script>
+    </head>
+    <body id="body">
+    <nav class = "navbar navbar-default">
+         <div class = "navbar-header">
+               <div class="col-md-6">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="Landing.html">Weather Analysis</a>
+                    <div class="container">
+                        <div class="col-md-2">
+                            <div class="sigline">
+                                 <p>Zach King | Data Analytics</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </nav>
-            <div class="container">
-                <div class="row row-grid">
-                    <div class="col-md-8">
-                        <div class="box box-left">
-                            <section id="intro">
-                                <h1>Equatorial Latitude vs Weather</h1>
-                                <hr>
-                                <figure>
-                                    <a target="_blank" href=Latvstemp.html >
-                                        <img id="viz-main" src="Latitude vs Temperature.png" alt="Latitude vs temperature">
-                                    </a>
-                                </figure>
-                                <section id="summary">
-                                    <p>
-                                    </p>
-                                    <p> 
-                                    </p>
-                                    <p>
-                                       
-                                    </p>
-                                    <ul>
-                                        <li>
-                                          <a href= "Latvstemp.html"> Latitude vs Temperature </a>
-                                        </li>
-                                        <li>
-                                            <a href= "Latvshumidity.html"> Latitude vs Humidity % </a>
-                                        </li>
-                                        <li>
-                                            <a href= "Latvsclouds.html"> Latitude vs Cloudiness </a>
-                                        </li>
-                                        <li>
-                                            <a href= "Latvswind.html"> Latitude vs Wind Speed (MPH) </a>
-                                        </li>
-                                    </ul>
-                                </section>
-                            </section>
-                        </div>
-                    </div> 
+                
                 </div>
             </div>
- 
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Graphs<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="Latvstemp.html">Temperature</a></li>
+                                <li><a href="Latvshumidity.html">Humidity</a></li>
+                                <li><a href="Latvsclouds.html">Cloudiness</a></li>
+                                <li><a href="Latvswind.html">Wind Speed</a></li>
+                            </ul>
+                        </li>
+                        <li> <a href="comparison.html">Comparison</a></li>
+                        <li> <a href="data.html">Data</a></li>
+                    </ul>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-1"></div>
+               <div class="col-md-7">
+                    <div class="box box-left">
+                        <div class="panel-default">
+                            <div class="panel-body">
+                                <h2>Latitude vs Weather</h2>
+                                <hr>
+                                <img src="Ocean_temp.jpg" alt="Ocean_temp" style="width:50%; float: left; margin:5%">
+                                <p class="text1">
+                                        The equator is 0 degrees latitude, the exact center of the planet earth, 
+                                        this belt is known for warm weather, tropical beaches and deep jungles. 
+                                        But just how does the weather differ from those of more northern latitudes? 
+                                        In this project we will find out with the help of graphs plotting the temperature,
+                                        humditiy, cloudiness, and wind speed from the equator north.<br></br>
 
-</body>
+                                        In each of the links in the dropdown menu you will find each graph and a short description 
+                                        of what each plots along with a short analysis of each. In the data tab you will find a 
+                                        list of the cities plotted on the graphs with their latitudes and longitudes.
+                                        Finally, in the tab marked comparison you will find all of the graphs displayed together.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="box">
+                        <div class="panel-default">
+                            <div class="panel-body">
+                                <div class="row">
+                                    <h3 class="col-md-12">Visualizations</h3>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                        <a href="Latvstemp.html">
+                                          <img src="Latitude vs Temperature.png" style="width: 100%; margin: 5%; ">
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                            <a href="Latvshumidity.html">
+                                              <img src="Latitude vs Humidity.png" style="width: 100%; margin:5%;">
+                                            </a>
+                                     </div>
+                                </div>
+                                <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                <a href="Latvsclouds.html">
+                                                  <img src="Latitude vs Cloudiness.png" style="width: 100%; margin:5%;">
+                                                </a>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                                    <a href="Latvswind.html">
+                                                      <img src="Latitude vs Wind Speed (MPH).png" style="width: 100%; margin:5%;">
+                                                    </a>
+                                             </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </body>
 </html>
